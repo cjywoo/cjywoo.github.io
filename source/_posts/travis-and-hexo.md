@@ -13,25 +13,27 @@ tags:
 
 ### 1.博客搭建的准备工作
 
-* 创建一个工程文件
-* 安装hexo
+创建一个工程文件
+
+安装hexo
+
 ``` js
 npm i -g hexo
 npm i -g hexo-cli
 ```
 
-* 初始化``hexo ini ``,初始化之后，就可以看到一部分文件
-  * node_modules：是依赖包
-  * public：存放的是生成的页面
-  * scaffolds：命令生成文章等的模板
-  * source：用命令创建的各种文章
-  * themes：主题
-  * \_config.yml：整个博客的配置
-  * db.json：source解析所得到的
-  * package.json：项目所需模块项目的配置信息
+初始化``hexo ini ``,初始化之后，就可以看到一部分文件
+* node_modules：是依赖包
+* public：存放的是生成的页面
+* scaffolds：命令生成文章等的模板
+* source：用命令创建的各种文章
+* themes：主题
+* \_config.yml：整个博客的配置
+* db.json：source解析所得到的
+* package.json：项目所需模块项目的配置信息
 
-* 将代码上传github 
-* 修改repo参数
+将代码上传github
+修改repo参数
 修改``_config.yml``中的配置
 
 ```
@@ -41,7 +43,7 @@ deploy:
   branch: master
 ```
 
-* 回到gitbash中，输入指令进行博客创建
+回到gitbash中，输入指令进行博客创建
 
 ```
 hexo clean
@@ -55,9 +57,9 @@ hexo server
 
 后期补充
 
-* 修改博客主题
+#### 修改博客主题
 
-* 增加插件
+#### 增加插件
 
 ## 配置travis
 
@@ -78,16 +80,21 @@ hexo server
 * 生成``token``后，点击复制，并保存
 
 ### 配置travis
-* 利用github账号登录Travis,右上角点击同步项目(注意，有时候会切换到私人项目，一个老人，但是我们一般都是开源项目，所以点击切换，看到一个小女孩就对了)
-* 将你需要自动部署的项目开关打开
-![travisfirst](travis-and-hexo/travisfirst.png)
-* 在点击``Build only if .travis.yml is present``
-![present](travis-and-hexo/present.png)
-* 在这里我将变量名称名为```REPO_TOKEN```，放上token，点击Add按钮
-![token](travis-and-hexo/value.png)
-* 在你的项目内新建``.travis.yml``
 
-```
+利用github账号登录Travis,右上角点击同步项目(注意，有时候会切换到私人项目，一个老人，但是我们一般都是开源项目，所以点击切换，看到一个小女孩就对了)
+
+将你需要自动部署的项目开关打开
+![travisfirst](/travis-and-hexo/travisfirst.png)
+
+在点击``Build only if .travis.yml is present``
+![present](/travis-and-hexo/present.png)
+
+在这里我将变量名称名为``REPO_TOKEN``，放上token，点击Add按钮
+![token](/travis-and-hexo/value.png)
+
+在你的项目内新建``.travis.yml``
+
+``` js
 # 使用语言
 language: node_js
 # node版本
@@ -127,4 +134,4 @@ after_success:
   master
 ```
 
-* 然后利用github工具提交，如果travis里面的build log显示正常即可。
+然后利用github工具提交，如果travis里面的build log显示正常即可。
