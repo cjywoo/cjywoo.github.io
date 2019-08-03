@@ -49,7 +49,7 @@ class Banner extends React.PureComponent {
             type="bottom"
           >
             <h1 key="h1">
-              Ant Design
+              碧&nbsp;&nbsp;落
             </h1>
             <p key="p">
               <FormattedMessage id="app.home.introduce" />

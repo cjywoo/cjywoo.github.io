@@ -5,8 +5,8 @@ export default function Header(props) {
   return (
     <header {...props} id="header">
       <Link id="logo">
-        <img alt="logo" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg" />
-        <img alt="Ant Design" src="https://gw.alipayobjects.com/zos/rmsportal/DkKNubTaaVsKURhcVGkh.svg" />
+        <img alt="logo" src="https://avatars1.githubusercontent.com/u/13762580?s=460&v=4" />
+        <span className="logo-text">Chen JunWoo</span>
       </Link>
     </header>
   );

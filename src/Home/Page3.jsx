@@ -7,20 +7,10 @@ import svgBgToParallax from './util';
 
 const page3Data = [
   {
-    title: <FormattedMessage id="app.home.tool-package-title" />,
-    content: <FormattedMessage id="app.home.tool-package-content" />,
+    title: <FormattedMessage id="app.home.my-plan" />,
+    content: <FormattedMessage id="app.home.my-plan-content" />,
     img: 'https://gw.alipayobjects.com/zos/rmsportal/qggKjIGNFlVmMpwDUXPU.svg',
-  },
-  {
-    title: <FormattedMessage id="app.home.tool-library-title" />,
-    content: <FormattedMessage id="app.home.tool-library-content" />,
-    img: 'https://gw.alipayobjects.com/zos/rmsportal/dgjVqwkJvptQEtlfctvk.svg',
-  },
-  {
-    title: <FormattedMessage id="app.home.tool-kitchen-title" />,
-    content: <FormattedMessage id="app.home.tool-kitchen-content" />,
-    img: 'https://gw.alipayobjects.com/zos/rmsportal/vUxYuDdsbBBcMDxSGmwc.svg',
-  },
+  }
 ];
 
 const svgBg = [
@@ -37,7 +27,7 @@ const svgBg = [
 ];
 const svgChildren = svgBgToParallax(svgBg);
 const children = page3Data.map((item, i) => (
-  <Col key={i.toString()} md={8} xs={24} className="page3-block">
+  <Col key={i.toString()} md={24} xs={24} className="page3-block">
     <div className="page3-img-wrapper">
       <img src={item.img} />
     </div>
@@ -56,7 +46,7 @@ export default function Page3() {
         </svg>
       </div>
       <div className="page" >
-        <h2>工具&资源</h2>
+        <h2>我的计划</h2>
         <ScrollOverPack location="page3">
           <QueueAnim key="queue" component={Row} type="bottom" leaveReverse>
             {children}

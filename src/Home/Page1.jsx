@@ -10,8 +10,9 @@ import { FormattedMessage } from 'react-intl';
 const page1Data = [
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/URIeCOKLMAbRXaeXoNqN.svg',
-    name: '设计价值观',
-    nameEn: 'Design Values',
+    name: 'PC模板工程',
+    nameEn: 'Sword Design',
+    src: 'https://github.com/cjywoo/Sword-Design',
     svgBg: (
       <svg width="213px" height="303px" viewBox="0 0 213 303" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <circle id="Oval-12-Copy-6" fill="#1D39C4" opacity="0.45" cx="60" cy="157" r="25" />
@@ -33,8 +34,8 @@ const page1Data = [
   },
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/qXncdwwUTTgUFnsbCNCE.svg',
-    name: '视觉',
-    nameEn: 'Visual',
+    name: 'BFF框架',
+    nameEn: 'SwordV-Back',
     svgBg: (
       <svg width="207px" height="295px" viewBox="0 0 207 295" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <rect id="Rectangle-14" stroke="#1D39C4" opacity="0.7" x="192.5" y="62.5" width="14" height="14" rx="1" />
@@ -54,8 +55,8 @@ const page1Data = [
   },
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/YFXXZocxAgjReehpPNbX.svg',
-    name: '可视化',
-    nameEn: 'Visualisation',
+    name: '配置可视化',
+    nameEn: 'SwordV',
     svgBg: (
       <svg width="215px" height="286px" viewBox="0 0 215 286" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" style={{ transform: 'translateX(-30px)' }}>
         <circle id="Oval-12-Copy-4" fill="#1D39C4" opacity="0.35" cx="77" cy="152" r="10" />
@@ -75,8 +76,8 @@ const page1Data = [
   },
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/VPuetGsvJuYBwoDkZWFW.svg',
-    name: '动效',
-    nameEn: 'Animation',
+    name: '原型转化',
+    nameEn: 'SwordFormer',
     svgBg: (
       <svg width="193px" height="286px" viewBox="0 0 193 286" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" style={{ transform: 'translateY(-20px)' }}>
         <circle id="Oval-12-Copy-4" fill="#1D39C4" opacity="0.35" cx="71" cy="65" r="10" />
@@ -185,6 +186,7 @@ export default class Page1 extends React.PureComponent {
             {(this.props.isMobile || isHover) && this.getSvgChild(item.svgBg.props.children)}
           </TweenOneGroup>
           <QueueAnim
+            src={item.src}
             className="page1-block"
             type="bottom"
             component={Link}
@@ -204,7 +206,7 @@ export default class Page1 extends React.PureComponent {
     return (
       <div className="home-page-wrapper page1">
         <div className="page" >
-          <h2><FormattedMessage id="app.home.design-language" /></h2>
+          <h2><FormattedMessage id="app.home.my-project" /></h2>
           <ScrollOverPack playScale="0.3">
             <QueueAnim
               component={Row}

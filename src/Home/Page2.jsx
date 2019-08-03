@@ -10,21 +10,21 @@ import svgBgToParallax from './util';
 const page2Data = [
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/eYNnmGagLWdrkdMHVUuA.svg',
-    name: 'Ant Design Components',
+    name: 'ROOKIE',
   },
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/EPaPtDVGnJhyqyBAUZMl.svg',
-    name: 'Ant Design Pro',
+    name: 'Awesome-Front',
     slogan: (<FormattedMessage id="app.home.product-pro-slogan" />),
   },
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/GobRAKexhfTSJdLFzDFY.svg',
-    name: 'Ant Design Mobile',
+    name: 'PPT-Master',
     slogan: (<FormattedMessage id="app.home.product-mobile-slogan" />),
   },
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/slVtnOCcgeAcLEPwtewY.svg',
-    name: 'AntV',
+    name: 'self-paediatrics',
     slogan: (<FormattedMessage id="app.home.product-antv-slogan" />),
   },
 ];
@@ -68,8 +68,7 @@ const svgBgChildArray = svgBgChild.map((item, i) => {
 export default function Page2({ isMobile }) {
   const componentButton = (
     <div key="b" className="components-button-wrapper">
-      <a>Ant Design of React <Icon type="right" /></a>
-      <a>Ant Design of Angular <Icon type="right" /></a>
+      <a>Have a look! <Icon type="right" /></a>
     </div>
   );
   const children = page2Data.map((item, i) => {
@@ -78,7 +77,7 @@ export default function Page2({ isMobile }) {
     }
     const content = isMobile && !i ? componentButton : [
       <p key="p">{item.slogan}</p>,
-      <a key="a">learn more <Icon type="right" /></a>,
+      <a key="a">Have a look! <Icon type="right" /></a>,
     ];
     return (
       <Row className="product-block" key={i.toString()}>
@@ -99,7 +98,7 @@ export default function Page2({ isMobile }) {
   return (
     <div className="home-page-wrapper page2" id="page2">
       <div className="page" >
-        <h2><FormattedMessage id="app.home.solution" /></h2>
+        <h2><FormattedMessage id="app.home.my-book" /></h2>
         <ScrollOverPack component={Row} className="page2-content" playScale="0.4">
           <QueueAnim
             component={Col}
@@ -109,7 +108,7 @@ export default function Page2({ isMobile }) {
             type="bottom"
             leaveReverse
           >
-            <h3 key="h1">Ant Design Components</h3>
+            <h3 key="h1">ROOKIE</h3>
             <p key="p"><FormattedMessage id="app.home.components-explain" /></p>
             {componentButton}
           </QueueAnim>
