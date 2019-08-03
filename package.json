@@ -40,7 +40,7 @@
     "lint"
   ],
   "scripts": {
-    "build": "atool-build && cp index.html dist",
+    "build": "atool-build && cp src/index.html dist",
     "lint": "eslint --ext .js,.jsx src/",
     "eslint-fix": "eslint --fix src/ --ext .js,.jsx",
     "start": "dora --plugins webpack",
