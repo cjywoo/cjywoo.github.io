@@ -23,4 +23,4 @@
 * `gitbook`
 
 ### License
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcjywoo%2Fcjywoo.github.io.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcjywoo%2Fcjywoo.github.io?ref=badge_shield)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcjywoo%2Fcjywoo.github.io.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcjywoo%2Fcjywoo.github.io?ref=badge_large)

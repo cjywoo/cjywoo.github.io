@@ -41,7 +41,7 @@
     "lint"
   ],
   "scripts": {
-    "build": "atool-build && cp src/index.html dist",
+    "build": "atool-build && cp src/index.html dist && cp favicon.ico dist && cp README.md dist",
     "lint": "eslint --ext .js,.jsx src/",
     "eslint-fix": "eslint --fix src/ --ext .js,.jsx",
     "start": "dora --plugins webpack,livereload",
