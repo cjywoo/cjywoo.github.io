@@ -47,11 +47,13 @@ export default function Page3() {
       </div>
       <div className="page" >
         <h2>我的计划</h2>
+        <a href="https://wootic.gitbook.io/sky/" target="_blank">
         <ScrollOverPack location="page3">
           <QueueAnim key="queue" component={Row} type="bottom" leaveReverse>
             {children}
           </QueueAnim>
         </ScrollOverPack>
+        </a>
       </div>
     </div>
   );

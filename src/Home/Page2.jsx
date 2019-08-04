@@ -16,16 +16,19 @@ const page2Data = [
     img: 'https://gw.alipayobjects.com/zos/rmsportal/EPaPtDVGnJhyqyBAUZMl.svg',
     name: 'Awesome-Front',
     slogan: (<FormattedMessage id="app.home.product-pro-slogan" />),
+    href:'https://github.com/cjywoo/Awesome-Front'
   },
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/GobRAKexhfTSJdLFzDFY.svg',
     name: 'PPT-Master',
     slogan: (<FormattedMessage id="app.home.product-mobile-slogan" />),
+    href:'https://github.com/cjywoo/PPT-Master'
   },
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/slVtnOCcgeAcLEPwtewY.svg',
     name: 'self-paediatrics',
     slogan: (<FormattedMessage id="app.home.product-antv-slogan" />),
+    href:'https://github.com/cjywoo/self-paediatrics'
   },
 ];
 
@@ -68,7 +71,7 @@ const svgBgChildArray = svgBgChild.map((item, i) => {
 export default function Page2({ isMobile }) {
   const componentButton = (
     <div key="b" className="components-button-wrapper">
-      <a>Have a look! <Icon type="right" /></a>
+      <a href="https://wootic.gitbooks.io/rocket/content/" target="_blank">Have a look! <Icon type="right" /></a>
     </div>
   );
   const children = page2Data.map((item, i) => {
@@ -77,7 +80,7 @@ export default function Page2({ isMobile }) {
     }
     const content = isMobile && !i ? componentButton : [
       <p key="p">{item.slogan}</p>,
-      <a key="a">Have a look! <Icon type="right" /></a>,
+      <a key="a" href={item.href} target="_blank">Have a look! <Icon type="right" /></a>,
     ];
     return (
       <Row className="product-block" key={i.toString()}>
