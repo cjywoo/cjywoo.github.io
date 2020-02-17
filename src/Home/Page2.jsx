@@ -1,9 +1,6 @@
 import React from 'react';
-import { Row, Col, Icon } from 'antd';
-import QueueAnim from 'rc-queue-anim';
-import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
+import { Row, Col } from 'antd';
 
-import { FormattedMessage } from 'react-intl';
 
 import svgBgToParallax from './util';
 
@@ -11,24 +8,25 @@ const page2Data = [
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/eYNnmGagLWdrkdMHVUuA.svg',
     name: 'ROOKIE',
+    href: 'https://cjywoo.github.io/ROOKIE/teamwork/doc.html'
   },
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/EPaPtDVGnJhyqyBAUZMl.svg',
     name: 'Awesome-Front',
     slogan: (<FormattedMessage id="app.home.product-pro-slogan" />),
-    href:'https://github.com/cjywoo/Awesome-Front'
+    href: 'https://github.com/cjywoo/Awesome-Front'
   },
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/GobRAKexhfTSJdLFzDFY.svg',
     name: 'PPT-Master',
     slogan: (<FormattedMessage id="app.home.product-mobile-slogan" />),
-    href:'https://github.com/cjywoo/PPT-Master'
+    href: 'https://github.com/cjywoo/PPT-Master'
   },
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/slVtnOCcgeAcLEPwtewY.svg',
-    name: 'self-paediatrics',
+    name: '数据可视化笔记',
     slogan: (<FormattedMessage id="app.home.product-antv-slogan" />),
-    href:'https://github.com/cjywoo/self-paediatrics'
+    href: 'https://www.yuque.com/alipay2088002853001807/izr13g'
   },
 ];
 
@@ -68,7 +66,7 @@ const svgBgChildArray = svgBgChild.map((item, i) => {
   const { props } = item;
   return React.cloneElement(item, { children: svgBgToParallax(props.children, i) });
 });
-export default function Page2({ isMobile }) {
+export default function Page2 ({ isMobile }) {
   const componentButton = (
     <div key="b" className="components-button-wrapper">
       <a href="https://wootic.gitbooks.io/rocket/content/" target="_blank">Have a look! <Icon type="right" /></a>

@@ -58,7 +58,7 @@ const page1Data = [
     img: 'https://gw.alipayobjects.com/zos/rmsportal/YFXXZocxAgjReehpPNbX.svg',
     name: '配置可视化',
     nameEn: 'SwordV',
-    href:'https://github.com/cjywoo/SwordV',
+    href: 'https://github.com/cjywoo/SwordV',
     svgBg: (
       <svg width="215px" height="286px" viewBox="0 0 215 286" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" style={{ transform: 'translateX(-30px)' }}>
         <circle id="Oval-12-Copy-4" fill="#1D39C4" opacity="0.35" cx="77" cy="152" r="10" />
@@ -80,7 +80,7 @@ const page1Data = [
     img: 'https://gw.alipayobjects.com/zos/rmsportal/VPuetGsvJuYBwoDkZWFW.svg',
     name: '原型转化',
     nameEn: 'SwordFormer',
-    href:'https://github.com/cjywoo/SwordFormer',
+    href: 'https://github.com/cjywoo/SwordFormer',
     svgBg: (
       <svg width="193px" height="286px" viewBox="0 0 193 286" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" style={{ transform: 'translateY(-20px)' }}>
         <circle id="Oval-12-Copy-4" fill="#1D39C4" opacity="0.35" cx="71" cy="65" r="10" />
@@ -173,7 +173,7 @@ export default class Page1 extends React.PureComponent {
   leave = {
     opacity: 0, duration: 300, x: 100, y: 150, ease: 'easeInBack',
   };
-  render() {
+  render () {
     const children = page1Data.map((item, i) => {
       const isHover = item.nameEn === this.state.hoverKey;
       return (

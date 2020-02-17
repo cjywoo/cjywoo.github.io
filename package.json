@@ -34,12 +34,8 @@
     "eslint-plugin-react": "^7.5.1",
     "expect": "^21.2.1",
     "gh-pages": "^1.1.0",
-    "pre-commit": "^1.2.2",
     "redbox-react": "^1.5.0"
   },
-  "pre-commit": [
-    "lint"
-  ],
   "scripts": {
     "build": "atool-build && cp src/index.html dist && cp favicon.ico dist && cp README.md dist",
     "lint": "eslint --ext .js,.jsx src/",
