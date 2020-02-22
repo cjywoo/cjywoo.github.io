@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'antd';
-
+import { FormattedMessage } from 'react-intl';
 
 import svgBgToParallax from './util';
 

@@ -37,7 +37,7 @@ const children = page3Data.map((item, i) => (
     </div>
   </Col>
 ));
-export default function Page3() {
+export default function Page3 () {
   return (
     <div className="home-page-wrapper page3" id="page3">
       <div className="parallax-bg top" >
@@ -48,11 +48,11 @@ export default function Page3() {
       <div className="page" >
         <h2>我的计划</h2>
         <a href="https://wootic.gitbook.io/sky/" target="_blank">
-        <ScrollOverPack location="page3">
-          <QueueAnim key="queue" component={Row} type="bottom" leaveReverse>
-            {children}
-          </QueueAnim>
-        </ScrollOverPack>
+          <ScrollOverPack location="page3">
+            <QueueAnim key="queue" component={Row} type="bottom" leaveReverse>
+              {children}
+            </QueueAnim>
+          </ScrollOverPack>
         </a>
       </div>
     </div>
